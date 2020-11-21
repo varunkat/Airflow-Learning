@@ -1,0 +1,12 @@
+fernet key = gne9nrTXd1xGmh1OORt1qH22u5zSH1nXOqNGdbP1MhY=
+
+
+
+command to get fernet key - python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
+
+command to set fernet key - export AIRFLOW__CORE__FERNET_KEY=
+
+
+1. airflow initdb
+2. airflow resetdb
+3. airflow upgradedb
